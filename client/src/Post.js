@@ -39,7 +39,7 @@ class Post extends Component {
         <div className="App">
         <h3>Post Form</h3>  
       <form className="form" onSubmit={this.onSubmit}>
-        <input required type="text"  placeholder="Enter Post Title"
+        <input required type="text" ref={(input) => this.getTitle = input}  placeholder="Enter Post Title"
         value={this.state.title}
         onChange={this.onChangeTitle} /><br /><br />
         <button>Submit</button>
