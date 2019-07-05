@@ -15,7 +15,7 @@ router.get('/', (req, res) => {
     .then(Posts => res.json(Posts));
 });
 
-router.post('/post', (req, res) => {
+router.post('/AddNewPost', (req, res) => {
     const newPost= new Post({
        title: req.body.title 
     });
